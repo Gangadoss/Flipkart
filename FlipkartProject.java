@@ -32,24 +32,38 @@ public class FlipkartProject {
 //		System.out.println(No1Prt);
 		
 	   List<WebElement> Dairy = driver.findElements(By.className("s1Q9rs"));
-	   System.out.println(Dairy.size());
-//	   WebElement No2 = Dairy.get(1);
-//	   String text1 = No2.getText();
-//	   System.out.println(text1);
-	   
-	   for (int i = 0; i < Dairy.size(); i++) {
-		WebElement Print = Dairy.get(i);   
-		String text2 = Print.getText();
-		System.out.println(text2);
+	  
+	   List<WebElement> Price1 = driver.findElements(By.className("_30jeq3"));
 		
+		for (int i = 0; i < Dairy.size(); i++) {
+				WebElement Print = Dairy.get(i);   
+				String text2 = Print.getText();
+				System.out.println(text2);
+		}
+		for (int j = 0; j < Price1.size(); j++) {
+			WebElement Price2 = Price1.get(j);
+			String text4 = Price2.getText();
+			System.out.println(text4);
 		
+		}
+	
 	}
+}
+		
+		
+		
+		
+	   
+	
+		
+		
+	
 		
 		
 		
 		
 		
-		
+	  
 		
 		
 		
@@ -59,8 +73,8 @@ public class FlipkartProject {
 		
 		
 	
-	}
+	
 	
 	
 
-}
+
